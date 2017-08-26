@@ -1,0 +1,28 @@
+cd C:\Desenvolvimento\python\projects_django\mysite
+
+-To create your app: 
+python manage.py startapp polls
+
+-start
+python manage.py runserver 8080
+
+-Migrations are how Django stores changes to your models
+python manage.py makemigrations polls
+
+-run the migrations for you and manage your database schema automatically 
+python manage.py sqlmigrate polls 0001
+
+-run migrate again to create those model tables in your database
+python manage.py migrate
+
+-Change your models (in models.py).
+-Run python manage.py makemigrations to create migrations for those changes
+-Run python manage.py migrate to apply those changes to the database.
+
+-python manage.py shell
+
+python manage.py createsuperuser
+
+
+-Running tests
+python manage.py test polls
